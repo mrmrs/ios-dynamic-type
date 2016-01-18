@@ -1,0 +1,31 @@
+{
+  "name": "ios-dynamic-type",
+  "description": "CSS module for utilizing dynamic type in iOS on the web",
+  "version": "1.0.0",
+  "author": {
+    "name": "mrmrs",
+    "email": "hi@mrmrs.cc",
+    "url": "http://mrmrs.cc"
+  },
+  "style": "css/ios-dynamic-type.css",
+  "files": [
+    "src",
+    "css"
+  ],
+  "keywords": [
+    "css",
+    "fonts",
+    "type faces",
+    "typography",
+    "ios",
+    "design"
+  ],
+  "repository": "mrmrs/css-system-fonts",
+  "license": "MIT",
+  "devDependencies": {
+    "tachyons-cli": "^0.3.0"
+  },
+  "scripts": {
+    "start": "tachyons src/ios-dynamic-type.css > css/ios-dynamic-type.css && tachyons src/ios-dynamic-type.css --minify > css/ios-dynamic-type.min.css && tachyons src/ios-dynamic-type.css --generate-docs --package=../../package.json > readme.md"
+  }
+}
