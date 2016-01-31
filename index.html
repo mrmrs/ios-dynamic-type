@@ -9,65 +9,89 @@
     <meta name="author" content="mrmrs">
     <meta name="description" content="System fonts">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://tachyons.io/css/tachyons.min.css">
+    <link rel="stylesheet" href="http://mrmrs.io/gradients/src/gradients.css">
     <link rel="stylesheet" href="css/ios-dynamic-type.min.css">
-    <style>
-      blockquote { border: 0; padding-left: 0; margin-left: 0; }
-      img { max-width: 100%; }
+    <style type="text/css" media="screen">
+      .bg-washed { background-color: #e0ffff; }
     </style>
   </head>
-  <body>
-    <header>
-      <h1 class="ios-headline">System Fonts CSS</h1>
-      <h2 class="ios-subheadline">This page will not look the same across platforms.</h2>
-      <p>
+  <body class="w-100 bg-washed black-80">
+    <header class=" ptxl phm">
+      <h1 class="ios-headline tc f1-m mega-l mbm">Dynamic Type in iOS</h1>
+      <h2 class="ios-subheadline tc mtn">A css module for utilitizing iOS' dynamic type settings.  </h2>
+      <p class="lh-copy measure center pvl">
         "Going beyond the system font, iOS has dynamic type behavior, which can provide
         an additional level of fit and finish to your content. These text styles
         identify more than simply a particular font family; instead, they represent an
         entire style, including size and weight. These styles are therefore
         characterized by values given to the more-general font CSS property."
       </p>
-      <p>This css module provides some single purpose classes for utilitizing iOS' dynamic
-        type settings on the web.
-      </p>
     </header>
-    <main role="main">
-
-    <h1 class="ios-headline">This is a headline</h1>
-    <h2 class="ios-subheadline">This is a subheadline</h2>
-    <img src="http://placekitten.com/g/900/600">
-    <caption class="ios-caption">
-      This is first caption style for something about how cute cats are
-    </caption>
-    <caption class="ios-caption2">
-      This is the second caption style for something about how cute cats are
-    </caption>
-    <blockquote>
-      <p class="ios-body">
-        You can say, "I love you," in Helvetica. And you can say it
-        with Helvetica Extra Light if you want to be really fancy. Or you can say it
-        with the Extra Bold if it's really intensive and passionate, you know, and it
-        might work.
-      </p>
-      <p class="ios-tall-body">
-        - Robert Bringhurst
-      </p>
-    </blockquote>
-    <h1 class="ios-short-headline">Short headline</h1>
-    <h2 class="ios-short-subheadline">Short subheadline</h2>
-    <blockquote>
-      <p class="ios-short-body">
-        Typographic style is founded not on any one technology of typesetting or
-        printing, but on the primitive yet subtle craft of writing.
-      </p>
+    <main role="main" class="center mw6 pvl">
+      <h1 class="ios-headline black-70 f5 ttu tracked bb pbs">Examples</h1>
+      <div class="pvl">
+        <h1 class="ios-headline black-70 f5">Headers</h1>
+        <h1 class="ios-headline">This is a headline that is quite long with a lot of letters and words</h1>
+        <h2 class="ios-subheadline">This is a subheadline that is also quite long with many characters</h2>
+        <h1 class="ios-short-headline">Short headline</h1>
+        <h2 class="ios-short-subheadline">Short subheadline</h2>
+      </div>
+      <div class="pvl">
+        <h1 class="ios-headline black-70 f5">Body Copy</h1>
+        <blockquote class="pln mln">
+          <p class="ios-body">
+            This is an example of body copy.
+            You can say, "I love you," in Helvetica. And you can say it
+            with Helvetica Extra Light if you want to be really fancy. Or you can say it
+            with the Extra Bold if it's really intensive and passionate, you know, and it
+            might work.
+          </p>
+          <p class="ios-body">
+            - Robert Bringhurst
+          </p>
+        </blockquote>
+        <blockquote class="pln mln">
+          <p class="ios-tall-body">
+            This is an example of tall body copy.
+            You can say, "I love you," in Helvetica. And you can say it
+            with Helvetica Extra Light if you want to be really fancy. Or you can say it
+            with the Extra Bold if it's really intensive and passionate, you know, and it
+            might work.
+          </p>
+          <p class="ios-tall-body">
+            - Robert Bringhurst
+          </p>
+        </blockquote>
+        <blockquote class="pln mln">
+          <p class="ios-short-body">
+            This is an example of short-body.
+            Typographic style is founded not on any one technology of typesetting or
+            printing, but on the primitive yet subtle craft of writing.
+          </p>
+          <p class="ios-short-body">
+            - Robert Bringhurst
+          </p>
+        </blockquote>
+      </div>
+      <footer>
+        <h1 class="ios-headline black-70 f5">Captions &amp; Footnotes</h1>
+        <p class="ios-footnote">
+          This is a footnote about how excited I am for more platform specific system fonts.
+        </p>
+      </footer>
+      <caption class="ios-caption">
+        This is first caption style for something about how cute cats are
+      </caption>
+      <caption class="ios-caption2">
+        This is the second caption style for something about how cute cats are
+      </caption>
+    </main>
+    <footer class="mw6 center pvl bt b--white cf">
       <p>
-        - Robert Bringhurst
-      </p>
-    </blockquote>
-    <footer>
-      <p class="ios-footnote">
-        This is a footnote about how excited I am for more platform specific system fonts.
+        Built by <a href="http://mrmrs.cc" class="link blue dim">mrmrs</a>
+        <a class="fr link blue dim" href="http://github.com/mrmrs/ios-dynamic-type">View on GitHub</a>
       </p>
     </footer>
-    </main>
   </body>
 </html>
