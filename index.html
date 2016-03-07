@@ -12,19 +12,39 @@
     <link rel="stylesheet" href="http://tachyons.io/css/tachyons.min.css">
     <link rel="stylesheet" href="css/ios-dynamic-type.css">
     <style type="text/css" media="screen">
-      .bg-washed  background-color: #e0ffff;
+      .bg-washed  { background-color: #e0ffff; }
     </style>
   </head>
   <body class="w-100 bg-washed black-80">
     <header class=" pt5 ph3">
-      <h1 class="ios-headline tc f1-m f-headline-l mb3">Dynamic Type in iOS</h1>
-      <h2 class="ios-subheadline tc mt0 measure center">A css module for using dynamic type on iOS devices.</h2>
+      <h1 class="ios-headline tl tc-ns f1-m f-headline-l mb3">Dynamic Type in iOS</h1>
+      <h2 class="ios-subheadline tl tc-ns mt0 measure center">A css module for using dynamic type on iOS devices.</h2>
+      <div class="f5 measure center ba br2 b--black-10 pa3 bg-white-40 mv4 mv5-ns" >
+        <h3 class="mt0 mb3 f6">Install via NPM</h3>
+        <code class="f6">npm install --save-dev ios-dynamic-type</code>
+
+        <h3 class="mt4 mb3 f6">Clone the repo</h3>
+        <code class="f6">git clone git@github.com:mrmrs/ios-dynamic-type.git</code>
+
+        <h3 class="mt4 mb3 f6">Include via CDN</h3>
+        <div class="w-100 overflow-x-auto">
+          <code class="f6 code">&lt;link rel="stylesheet" href="https://npmcdn.com/ios-dynamic-type@1.0.0/css/ios-dynamic-type.min.css"&gt;</code>
+        </div>
+
+        <a class="link b black dib mv4 dim" href="https://raw.githubusercontent.com/mrmrs/ios-dynamic-type/master/css/ios-dynamic-type.min.css">Download Source</a>
+      </div>
       <p class="lh-copy measure center pv4 ios-body">
-        "Going beyond the system font, iOS has dynamic type behavior, which can provide
-        an additional level of fit and finish to your content. These text styles
-        identify more than simply a particular font family; instead, they represent an
-        entire style, including size and weight. These styles are therefore
-        characterized by values given to the more-general font CSS property."
+        <a href="https://webkit.org/blog/3709/using-the-system-font-in-web-content/" class="link black dim">
+          "Going beyond the system font, iOS has dynamic type behavior, which can provide
+          an additional level of fit and finish to your content. These text styles
+          identify more than simply a particular font family; instead, they represent an
+          entire style, including size and weight. These styles are therefore
+          characterized by values given to the more-general font CSS property."
+        </a>
+      </p>
+      <p class="lh-copy measure center mv4 ios-body">
+        The ability to leverage user settings at the browser or system level within your application's design is pretty compelling. There is now a <a href="https://lists.w3.org/Archives/Public/www-style/2015Jul/0169.html" class="link b black">w3c discussion on standardizing a way to reference the system font.</a>
+
       </p>
     </header>
     <main role="main" class="center mw6 pv4 ph3">
